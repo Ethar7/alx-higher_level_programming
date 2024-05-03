@@ -1,5 +1,14 @@
 #include "lists.h"
 #include <stdio.h>
+/**
+ * insert_node - insert in sorted node
+ *
+ * @head: pointer
+ *
+ * @number: int
+ *
+ * Return: ..
+*/
 listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *node = *head, *newnode = malloc(sizeof(listint_t));
