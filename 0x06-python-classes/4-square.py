@@ -7,7 +7,7 @@ and a method to calculate the area of the square.
 
 class Square:
     """Square class: Represents a square with a private instance 
-    attribute 'size'."""
+attribute 'size'."""
 
     def __init__(self, size=0):
         """
