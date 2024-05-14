@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """Module for Square class with size validation."""
 
-
 class Square:
     """Square class: Represents a square with a validated size attribute."""
-    def _init_(self, size=0):
+    def __init__(self, size=0):
         """
         Initialize a new Square with optional size.
 
