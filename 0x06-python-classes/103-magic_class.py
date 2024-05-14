@@ -2,6 +2,7 @@
 """
 This module provides a MagicClass that performs geometric calculations.
 """
+import math
 
 class MagicClass:
     """
