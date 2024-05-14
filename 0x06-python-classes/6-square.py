@@ -4,19 +4,20 @@ This module defines the Square class with private instance attribute size,
 and a method to calculate the area of the square.
 """
 
-
 class Square:
-   def __init__(self, size=0, position=(0, 0)):
-    """Initialize a new Square with a given size and position."""
+    def __init__(self, size=0, position=(0, 0)):
+        """Initialize a new Square with a given size and position."""
         self.__size = size
         self.__position = position
-        
+
     @property
     def size(self):
+        """Retrieve the size of the square."""
         return self.__size
 
     @size.setter
     def size(self, value):
+        """Set the size of the square, ensuring it's an integer >= 0."""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -25,19 +26,23 @@ class Square:
 
     @property
     def position(self):
+        """Retrieve the position of the square."""
         return self.__position
 
     @position.setter
     def position(self, value):
+        """Set the position of the square, ensuring it's a tuple of 2 positive integers."""
         if not isinstance(value, tuple) or len(value) != 2 or \
            not all(isinstance(num, int) and num >= 0 for num in value):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
     def area(self):
+        """Calculate the area of the square."""
         return self.__size ** 2
 
     def my_print(self):
+        """Print the square with the '#' character."""
         if self.__size == 0:
             print("")
         else:
