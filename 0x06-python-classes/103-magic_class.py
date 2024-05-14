@@ -4,12 +4,13 @@ This module provides a MagicClass that performs geometric calculations.
 """
 import math
 
+
 class MagicClass:
     """
     A class that represents a geometric shape with methods to calculate
     area and circumference.
     """
-    
+
     def __init__(self, radius=0):
         """Initialize the MagicClass with a given radius."""
         self.__check_radius(radius)
