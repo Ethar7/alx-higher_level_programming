@@ -4,9 +4,11 @@ This module defines the Square class with private instance attribute size,
 and a method to calculate the area of the square.
 """
 
+
 class Square:
     """
-    Represents a square with a private instance attribute size that is validated,
+    Represents a square with a private instance attribute size that is 
+    validated,
     and a public instance method to calculate the area of the square.
     """
 
