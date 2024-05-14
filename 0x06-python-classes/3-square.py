@@ -30,7 +30,6 @@ class Square:
     def area(self):
         """
         Calculate and return the current square area.
-
         Returns:
             The area of the square.
         """
