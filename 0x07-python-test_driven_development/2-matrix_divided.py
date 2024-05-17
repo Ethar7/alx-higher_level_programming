@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" this is for module"""
+""" this is for module documentation"""
 
 
 def matrix_divided(matrix, div):
