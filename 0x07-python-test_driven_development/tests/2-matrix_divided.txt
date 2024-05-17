@@ -6,10 +6,11 @@ Using ``matrix_divided``
 
 Import module:
     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
-Test normal matrix
+
+Test normal matrix:
     >>> matrix_divided([[1, 2, 3], [4, 5, 6]], 2)
     [[0.5, 1.0, 1.5], [2.0, 2.5, 3.0]]
-Test one element
+Test one element:
     >>> matrix_divided([[2]], 2)
     [[1.0]]
 Test element divided by negative:
