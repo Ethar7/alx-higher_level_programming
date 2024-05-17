@@ -50,7 +50,7 @@ Test 2nd arg none:
     >>> matrix_divided([[1, 2, 3], [4, 5, 6]], None)
     Traceback (most recent call last):
     ...
-    div must be a number
+    TypeError: div must be a number
 
 Test matrix non int or float:
     matrix_divided([[1, "fool", 3], [4, 5, 6]], 0)
