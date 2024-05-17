@@ -24,4 +24,4 @@ def add_integer(a, b=98):
 
 if __name__ == "main":
     import doctest
-    doctest.testmod()
+    doctest.testfile(tests/0-add_integer.txt)
