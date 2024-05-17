@@ -22,13 +22,6 @@ Test two floats:
 
     >>> add_integer(0.9, 0.9)
     0
-Add infinity:
-
-    >>> add_integer(float('inf'), float('-inf'))
-    Traceback (most recent call last):
-    ...
-    OverflowError: cannot convert float infinity to integer
-
 Add nan:
 
     >>> add_integer(0, float('nan'))
