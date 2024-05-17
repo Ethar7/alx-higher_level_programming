@@ -21,7 +21,7 @@ def matrix_divided(matrix, div):
     """
     if not isinstance(matrix, list) or \
        not all(isinstance(row, list) for row in matrix) or \
-       not all(isinstance(elem, (int, float)) 
+       not all(isinstance(elem, (int, float))
                for row in matrix for elem in row):
         raise TypeError("matrix must be a matrix (list of lists)"
                         "of integers/floats")
@@ -35,6 +35,6 @@ def matrix_divided(matrix, div):
     return [[round(elem / div, 2) for elem in row] for row in matrix]
 
 
-if __name__ == "__main__":
-    import doctest
-    doctest.testfile("tests/2-matrix_divided.txt")
+    if __name__ == "__main__":
+        import doctest
+        doctest.testfile("tests/2-matrix_divided.txt")
