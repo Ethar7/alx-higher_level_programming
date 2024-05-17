@@ -31,6 +31,6 @@ def matrix_divided(matrix, div):
     return [[round(elem / div, 2) for elem in row] for row in matrix]
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     import doctest
     doctest.testfile(tests/2-matrix_divided.txt)
