@@ -44,7 +44,7 @@ Test 1st arg none:
     >>> matrix_divided(None, 1)
     Traceback (most recent call last):
     ...
-    NameError: name 'none' is not defined
+    TypeError: matrix must be a matrix (list of lists)of integers/floats
 
 Test 2nd arg none:
     >>> matrix_divided([[1, 2, 3], [4, 5, 6]], None)
@@ -80,7 +80,7 @@ Test 2nd arg str:
     >>> matrix_divided([[1, 2, 3], [4, 5, 6]], "str")
     Traceback (most recent call last):
     ...
-    div must be a number
+    TypeError: div must be a number
 
 Test 1st arg str:
     >>> matrix_divided("foo", 1)
