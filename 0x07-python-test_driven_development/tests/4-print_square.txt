@@ -15,6 +15,7 @@ Test function2:
 	###
 	###
 	###
+
 Test normal print 10:
 	>>> print_square(10)
 	##########
