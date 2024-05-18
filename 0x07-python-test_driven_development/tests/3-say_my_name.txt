@@ -25,11 +25,11 @@ Test lastname empty:
 	
 Test two names are empty:
 	>>> say_my_name("", "")
-	My name is 
+	My name is  
 
 Test have spaces:
 	>>> say_my_name(" ", " ")
-	My name is  
+	My name is   
 
 Test firstname err:
 	>>> say_my_name(98, "smith")
