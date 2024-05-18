@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """this is module documentation"""
 
+
 def print_square(size):
     """
     Prints a square with the character #.
