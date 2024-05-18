@@ -21,4 +21,4 @@ def text_indentation(text):
         if char in ".?:":
             result += "\n\n"  # Add 2 new lines after the character
 
-    print(result)
+    print(result, end="")
