@@ -13,7 +13,8 @@ Test my function:
 
 Test firstname:
 	>>> say_my_name("smith")
-	My name is smith 
+	My name is smith
+
 Test Last name:
 	>>> say_my_name("", "smith")
 	My name is smith
