@@ -20,7 +20,7 @@ def text_indentation(text):
         result += char
         if char in ".?:":
             result += "\n\n"  # Add 2 new lines after the character
-        elif char == " ":
-            result += ""
+        elif char != " ":
+            result += " "
 
     print(result, end="")
