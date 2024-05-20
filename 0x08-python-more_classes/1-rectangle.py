@@ -17,7 +17,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """Set width of rectangle, ensuring it is an integer and non-negative."""
+        """Set width of rectangle, ensure it is an integer and non-negative."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -31,7 +31,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """Set the height of the rectangle, ensuring it is integer non-negative."""
+        """Set the height of the rectangle, ensure it is integer non-negative."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
