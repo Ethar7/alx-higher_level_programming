@@ -3,11 +3,11 @@
 
 
 class Rectangle:
-    """A class that defines a rectangle with 
+    """A class that defines a rectangle with
     private width and height attributes."""
 
     def __init__(self, width=0, height=0):
-        """Initialize the rectangle 
+        """Initialize the rectangle
         with optional width and height."""
         self.__width = width
         self.__height = height
@@ -19,7 +19,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """Set the width of the rectangle, 
+        """Set the width of the rectangle,
         ensuring it is an integer and non-negative."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -34,7 +34,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """Set the height of the rectangle, 
+        """Set the height of the rectangle,
         ensuring it is an integer and non-negative."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -47,7 +47,7 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-        """Return the perimeter of the rectangle, 
+        """Return the perimeter of the rectangle,
         or 0 if width or height is 0."""
         if self.__width == 0 or self.__height == 0:
             return 0
@@ -63,12 +63,12 @@ class Rectangle:
         return "\n".join(rectangle_str)
 
     def __repr__(self):
-        """Return a string representation 
+        """Return a string representation
         for recreating the instance."""
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """Print a message when an instance of 
+        """Print a message when an instance of
         Rectangle is deleted."""
         print("Bye rectangle...")
 
