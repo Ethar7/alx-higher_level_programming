@@ -3,10 +3,10 @@
 
 
 class Rectangle:
-    """A class that defines a rectangle with private width and height attributes."""
+    """class that defines a rectangle with private width, height"""
 
     def __init__(self, width=0, height=0):
-        """Initialize the rectangle with optional width and height."""
+        """Initialize the rectangle with width and height."""
         self.__width = width
         self.__height = height
 
@@ -17,7 +17,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """Set the width of the rectangle, ensuring it is an integer and non-negative."""
+        """Set the width, ensure it is an integer and non-negative."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -31,7 +31,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """Set the height of the rectangle, ensuring it is an integer and non-negative."""
+        """Set the height, ensure it is an integer and non-negative."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -58,6 +58,6 @@ class Rectangle:
         return "\n".join(rectangle_str)
 
     def __repr__(self):
-        """Return a string representation for recreating the instance."""
+        """a string representation for recreating the instance."""
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
