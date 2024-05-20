@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """this is module documentation"""
 
+
 class Rectangle:
-    """A class that defines a rectangle with private width and height attributes."""
+    """A class that defines a rectangle with private width height"""
 
     def __init__(self, width=0, height=0):
         """Initialize the rectangle with optional width and height."""
@@ -16,7 +17,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """Set the width of the rectangle, ensuring it is an integer and non-negative."""
+        """Set the width of, ensure it is an integer and non-negative."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -30,7 +31,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """Set the height of the rectangle, ensuring it is an integer and non-negative."""
+        """Set the height, ensure it is an integer and non-negative."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -42,7 +43,7 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-        """Return the perimeter of the rectangle, or 0 if width or height is 0."""
+        """Return the perimeter of the rectangle, or 0"""
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
