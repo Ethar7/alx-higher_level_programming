@@ -4,7 +4,7 @@
 
 class MyList(list):
     """my list class"""
-    
+
     def print_sorted(self):
         """
         Prints the list in ascending sorted order.
