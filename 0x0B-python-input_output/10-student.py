@@ -21,11 +21,11 @@ class Student:
         Retrieves a dictionary representation of the Student instance.
 
         Args:
-            attrs (list, optional): List of attribute names to include in the dictionary.
+            attrs (list, optional): List of attribute names in dic
                 If None, all attributes are included.
 
         Returns:
-            dict: A dictionary containing the specified attributes and their values.
+            dict: A dictionary containing the specified attri ,values.
         """
         if attrs is None:
             return self.__dict__
