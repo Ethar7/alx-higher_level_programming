@@ -2,7 +2,7 @@
 """this is a module documentation"""
 
 
-def write_file(filename="", text=""):
+def save_to_json_file(my_obj, filename):
     """this is func doc"""
     with open(filename, 'w', encoding='utf-8') as f:
-        return f.write(text)
+        json.dump(my_obj, f)
