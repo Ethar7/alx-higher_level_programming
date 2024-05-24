@@ -32,3 +32,30 @@ area method normal test:
 	>>> x.area()
 	Traceback (most recent call last):
 	Exception: area() is not implemented
+
+
+integer_validator() instance method
+-----------------------------------
+integer_validator is an instance method:
+	>>> type(BaseGeometry.__dict__['integer_validator'])
+	<class 'function'>
+
+integer_validator method called via class with no args:
+	>>> x.__class__.integer_validator()
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 3 required positional arguments: 'self', 'name', and 'value'
+
+integer_validator method arg test (0 args):
+	>>> x.integer_validator()
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+    
+integer_validator method arg test (3 args):
+	>>> x.integer_validator(1, 1, 1)
+	Traceback (most recent call last):
+	TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+Test integer_validator invalid arg:
+	>>> x.integer_validator("hossam")
+	Traceback (most recent call last):
+	TypeError: hossam must be an integer
