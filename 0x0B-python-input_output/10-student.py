@@ -5,7 +5,7 @@
 class Student:
     def __init__(self, first_name, last_name, age):
         """
-        Initializes a Student object with the given attributes.
+        Initializes a Student object with attri.
 
         Args:
             first_name (str): The first name of the student.
@@ -21,7 +21,7 @@ class Student:
         Retrieves a dictionary representation of the Student instance.
 
         Args:
-            attrs (list, optional): List of attribute names in dic
+            attrs (list, optional): List of attri names in dic
                 If None, all attributes are included.
 
         Returns:
