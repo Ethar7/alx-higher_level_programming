@@ -59,3 +59,60 @@ integer_validator method invalid arg:
 	>>> x.integer_validator("hossam")
 	Traceback (most recent call last):
 	TypeError: hossam must be an integer
+
+integer_validator method float.0 value:
+	>>> x.integer_validator("foo", 3.0)
+	Traceback (most recent call last):
+	TypeError: foo must be an integer
+
+integer_validator method string value:
+	>>> x.integer_validator("Bar", "bar")
+	Traceback (most recent call last):
+	TypeError: Bar must be an integer
+
+integer_validator method bool value:
+	>>> x.integer_validator("zar", True)
+	Traceback (most recent call last):
+	TypeError: zar must be an integer
+
+integer_validator method list value:
+	>>> x.integer_validator("a", [1])
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+integer_validator method None value:
+	>>> x.integer_validator("foo", None)
+	Traceback (most recent call last):
+	TypeError: foo must be an integer
+
+integer_validator method 0 value:
+	>>> x.integer_validator("key", 0)
+	Traceback (most recent call last):
+	ValueError: key must be greater than 0
+
+integer_validator method negative value:
+	>>> x.integer_validator("key", -1000)
+	Traceback (most recent call last):
+	ValueError: key must be greater than 0
+
+integer_validator method ok value:
+	>>> x.integer_validator("key", 98)
+    
+integer_validator method ok value 2:
+	>>> x.integer_validator("key", 1)
+
+integer_validator method empty string:
+	>>> x.integer_validator("", 1)
+
+integer_validator method empty string:
+	>>> x.integer_validator(None, 1)
+
+integer_validator method tuple:
+	>>> x.integer_validator("Foo", (1, 2))
+	Traceback (most recent call last):
+	TypeError: Foo must be an integer
+
+integer_validator method dic:
+	>>> x.integer_validator("Foo", {1, 2})
+	Traceback (most recent call last):
+	TypeError: Foo must be an integer
