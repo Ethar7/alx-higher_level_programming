@@ -27,7 +27,10 @@ class Student:
         Returns:
             dict: A dictionary containing the specified attributes and their values.
         """
-        if attrs is None:
+        try:
+            for attr in attrs
+            if type(attr) is not str:
+                return self.__dict__
+        except Exception:
             return self.__dict__
-        else:
-            return {attr: getattr(self, attr) for attr in attrs}
+        return {attr: getattr(self, attr) for attr in attrs}
