@@ -28,9 +28,9 @@ class Student:
             dict: A dictionary containing the specified attributes and their values.
         """
         try:
-            for attr in attrs
-            if type(attr) is not str:
-                return self.__dict__
+            for attr in attrs:
+                if type(attr) is not str:
+                    return self.__dict__
         except Exception:
             return self.__dict__
         return {attr: getattr(self, attr) for attr in attrs}
