@@ -58,7 +58,7 @@ integer_validator method arg test (3 args):
 integer_validator method invalid arg:
 	>>> x.integer_validator("hossam")
 	Traceback (most recent call last):
-	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 integer_validator method float.0 value:
 	>>> x.integer_validator("foo", 3.0)
