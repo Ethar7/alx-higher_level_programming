@@ -18,14 +18,14 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-        Retrieves a dictionary representation of the Student instance.
+        Retrieves a dict representation of the Student instance.
 
         Args:
-            attrs (list, optional): List of attribute names to include in the dictionary.
+            attrs (list, optional): List of attribute names to dic.
                 If None, all attributes are included.
 
         Returns:
-            dict: A dictionary containing the specified attributes and their values.
+            dict: A dictionary containing the specified attri, values.
         """
         if attrs is None:
             return self.__dict__
@@ -38,7 +38,7 @@ class Student:
         Replaces all attributes of the Student instance based on the provided dictionary.
 
         Args:
-            json (dict): A dictionary containing attribute names and their corresponding values.
+            json (dict): A dictionary containing attribute names and values.
         """
         for attr, value in json.items():
             setattr(self, attr, value)
