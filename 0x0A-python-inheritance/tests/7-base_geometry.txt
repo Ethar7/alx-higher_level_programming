@@ -55,7 +55,7 @@ integer_validator method arg test (3 args):
 	Traceback (most recent call last):
 	TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
-Test integer_validator invalid arg:
+integer_validator method invalid arg:
 	>>> x.integer_validator("hossam")
 	Traceback (most recent call last):
 	TypeError: hossam must be an integer
