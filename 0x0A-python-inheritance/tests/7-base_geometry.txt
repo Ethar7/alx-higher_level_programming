@@ -5,9 +5,15 @@ Using ``BaseGeometry``
 ---------------------
 
 Import function from module:
-    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 Test institiation:
-    >>> x = BaseGeometry()
-    >>> type(x) == BaseGeometry
-    True
+	>>> x = BaseGeometry()
+	>>> type(x) == BaseGeometry
+	True
+
+Test area method:
+	>>> type(BaseGeometry.__dict__.['area'])
+	<class 'function'>
+
+
