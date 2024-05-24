@@ -12,7 +12,8 @@ Test institiation:
     	>>> type(x) == BaseGeometry
     	True
 
+area() instance method
+----------------------
 Test area method:	
 	>>> type(BaseGeometry.__dict__['area'])
 	<class 'function'>
-
