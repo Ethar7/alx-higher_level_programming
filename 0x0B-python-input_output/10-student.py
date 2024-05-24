@@ -34,3 +34,8 @@ class Student:
         except Exception:
             return self.__dict__
         return {attr: getattr(self, attr) for attr in attrs}
+
+    def reload_from_json(self, json):
+        for attr, value in json.items():
+            setattr(self, attr, value)
+
